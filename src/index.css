@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100..900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 30px;
+    background: #f1f1f1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #21b9df;
+}
+
+.App {
+    font-size: 1.2rem;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* header */
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    margin: 0%;
+    justify-items: center;
+}
+
+.categories-list a{
+    font-size: 1.2rem;
+    color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(49, 137, 231);
+    border-radius: 10px;
+    padding: 6px; 
+}
+
+a {
+    text-decoration: none;
+    color: #21b9df;
+}
+
+.header h1 {
+    font-size: 2rem; /* Increased font size */
+    color: #21b9df;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #21b9df;
+}
+
+/* home page */
+
+.read-more {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+
+.read-more a {
+    color: #6980ea;
+    text-decoration: none;
+}
+.review-card {
+    background: white;
+    margin: 60px auto;
+    padding: 1px 20px 20px 90px;
+    position: relative;
+}
+
+.review-card .rating {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background: #21b9df;
+    font-size: 2em;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.review-card h2 {
+    font-size: 1.8rem; /* Adjusted font size */
+    margin-bottom: 0;
+}
+
+.review-card {
+    background: white;
+    margin: 60px auto;
+    padding: 1px 20px 20px 90px;
+    position: relative;
+    overflow: visible; /* စာသားအပြည့်အဝပေါ်ရန် overflow hidden ကို ဖယ်ရှား */
+}
+
+.review-card p {
+    white-space: normal; /* စာသားအလိုက် Line Break ရှိစေရန် */
+    overflow: visible; /* Overflow restrictions မဖွင့်ထား */
+    text-overflow: clip; /* စာသားကို ဖြတ်မချရန် */
+    display: inline-block; /* Block-level display */
+    word-wrap: break-word; /* စာလုံးကွင်းကျွတ်နေမှုမရှိအောင် */
+    max-height: none; /* Height limitations မရှိအောင် */
+}
+
+.review-detail {
+    text-align: justify;
+    line-height: 1.6;
+    padding: 40px;
+}
+
+.review-detail div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating p{
+    margin-left: 10px;
+    color: #df21bc;
+}
+
+.rating span{
+    color: #21b9df;
+}
+
+.review-detail small {
+    margin-right: 10px;
+    color: #777;
+}
+
+
+
+.review-card small {
+    margin-right: 10px;
+    color: #777;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .App {
+        font-size: 1rem;
+        padding: 10px 15px; /* Adjusted padding */
+    }
+
+    .header h1 {
+        font-size: 1.5rem; /* Increased font size */
+    }
+
+    .review-card {
+        margin: 30px auto;
+        padding: 10px;
+        border-radius: 10px; /* Added border-radius for rounded corners */
+    }
+
+    .review-card .rating {
+        font-size: 1em;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-card h2 {
+        font-size: 1.2rem; /* Adjusted font size */
+    }
+
+    .review-card p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .read-more {
+        justify-content: end;
+        font-size: 0.9rem;
+    }
+
+    .categories-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .categories-list a {
+        font-size: 0.8rem;
+        padding: 4px;
+    }
+
+    .review-detail {
+        text-align: justify;
+        line-height: 1.5;
+        padding: 0; /* Adjusted padding */
+    }
+
+    .review-detail div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .rating p {
+        margin-left: 0;
+        margin-top: 5px;
+        color: #df21bc;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .rating span {
+        color: #21b9df;
+    }
+}
